@@ -12,6 +12,7 @@ body {
 	width: 100%;
 }
 .corner1 {
+	overflow: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -21,14 +22,16 @@ body {
 	transition: 250ms;
 }
 .corner2 {
+	overflow: hidden;
 	position: absolute;
 	top: 0;
 	right: 0;
 	height: 50%;
 	width: 50%;
-	background: lightcoral;
+	background: salmon;
 }
 .corner3 {
+	overflow: hidden;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -37,6 +40,7 @@ body {
 	background: rgb(190, 253, 165);
 }
 .corner4 {
+	overflow: hidden;
 	position: absolute;
 	bottom: 0;
 	right: 0;
