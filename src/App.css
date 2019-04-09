@@ -1,32 +1,79 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+}
 .App {
-  text-align: center;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+.corner1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50%;
+	width: 50%;
+	background: slategray;
+	transition: 250ms;
+}
+.corner2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50%;
+	width: 50%;
+	background: lightcoral;
+}
+.corner3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 50%;
+	width: 50%;
+	background: rgb(190, 253, 165);
+}
+.corner4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 50%;
+	width: 50%;
+	background: lightblue;
+}
+.grow {
+	height: 60%;
+	width: 60%;
+	z-index: 9999;
+	transition: width 500ms, height 500ms;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.shrink {
+	height: 50%;
+	width: 50%;
+	z-index: 0;
+	transition: width 500ms, height 500ms, z-index 500ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.selected {
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	transition: width 500ms, height 500ms;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@keyframes grow {
+	0% {
+		height: 50%;
+		width: 50%;
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	100% {
+		height: 60%;
+		width: 60%;
+		z-index: 9999;
+	}
 }
