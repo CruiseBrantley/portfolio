@@ -14,49 +14,49 @@ class OuterSquare extends Component {
 				<div
 					className={this.evalClass(1)}
 					onMouseEnter={() => this.mouseEnterCorner(1)}
-					onMouseDown={() => this.mouseClickCorner(1)}
+					onClick={() => this.mouseClickCorner(1)}
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 1 ? (
-						<CornerFull subject="Bio" deselect={this.deselect} />
+						<CornerFull subject="Bio" />
 					) : (
-						<Corner subject="Bio" deselect={this.deselect} />
+						<Corner subject="Bio" />
 					)}
 				</div>
 				<div
 					className={this.evalClass(2)}
 					onMouseEnter={() => this.mouseEnterCorner(2)}
-					onMouseDown={() => this.mouseClickCorner(2)}
+					onClick={() => this.mouseClickCorner(2)}
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 2 ? (
-						<CornerFull subject="Projects" deselect={this.deselect} />
+						<CornerFull subject="Projects" />
 					) : (
-						<Corner subject="Projects" deselect={this.deselect} />
+						<Corner subject="Projects" />
 					)}
 				</div>
 				<div
 					className={this.evalClass(3)}
 					onMouseEnter={() => this.mouseEnterCorner(3)}
-					onMouseDown={() => this.mouseClickCorner(3)}
+					onClick={() => this.mouseClickCorner(3)}
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 3 ? (
-						<CornerFull subject="Experience" deselect={this.deselect} />
+						<CornerFull subject="Experience" />
 					) : (
-						<Corner subject="Experience" deselect={this.deselect} />
+						<Corner subject="Experience" />
 					)}
 				</div>
 				<div
 					className={this.evalClass(4)}
 					onMouseEnter={() => this.mouseEnterCorner(4)}
-					onMouseDown={() => this.mouseClickCorner(4)}
+					onClick={() => this.mouseClickCorner(4)}
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 4 ? (
-						<CornerFull subject="Education" deselect={this.deselect} />
+						<CornerFull subject="Education" />
 					) : (
-						<Corner subject="Education" deselect={this.deselect} />
+						<Corner subject="Education" />
 					)}
 				</div>
 			</div>
@@ -69,9 +69,6 @@ class OuterSquare extends Component {
 		return `corner${num} shrink`;
 	};
 	deselect = e => {
-		e.stopPropagation();
-		e.preventDefault();
-
 		this.setState({ grow: 0, selected: 0, timeout: true });
 		setTimeout(() => this.setState({ timeout: false }), 250);
 	};
@@ -83,7 +80,10 @@ class OuterSquare extends Component {
 		this.setState({ grow: 0 });
 	};
 	mouseClickCorner = num => {
-		if (this.state.selected === num) return;
+		if (this.state.selected === num) {
+			this.deselect();
+			return;
+		}
 		this.setState({ selected: num, timeout: true });
 		setTimeout(() => this.setState({ timeout: false }), 500);
 	};
