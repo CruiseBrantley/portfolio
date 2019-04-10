@@ -7,7 +7,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Route exact path="/" component={OuterSquare} />
+				<Route exact path="/" render={() => <OuterSquare />} />
 				<Route path="/bio" render={() => <OuterSquare selected={1} />} />
 				<Route path="/projects" render={() => <OuterSquare selected={2} />} />
 				<Route path="/experience" render={() => <OuterSquare selected={3} />} />
