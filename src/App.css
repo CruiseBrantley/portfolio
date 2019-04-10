@@ -94,3 +94,11 @@ body {
 		z-index: 9999;
 	}
 }
+
+.subject-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}

@@ -42,7 +42,7 @@ class OuterSquare extends Component {
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 3 ? (
-						<CornerFull subject="Experience" />
+						<CornerFull subject="Experience" linked={true} />
 					) : (
 						<Corner subject="Experience" />
 					)}
@@ -74,10 +74,10 @@ class OuterSquare extends Component {
 	};
 	mouseEnterCorner = num => {
 		if (this.state.timeout) return;
-		this.setState({ grow: num });
+		if (this.state.grow !== num) this.setState({ grow: num });
 	};
 	mouseLeaveCorner = () => {
-		this.setState({ grow: 0 });
+		if (this.state.grow === 0) this.setState({ grow: 0 });
 	};
 	mouseClickCorner = num => {
 		if (this.state.selected === num) {
@@ -85,7 +85,6 @@ class OuterSquare extends Component {
 			return;
 		}
 		this.setState({ selected: num, timeout: true });
-		setTimeout(() => this.setState({ timeout: false }), 500);
 	};
 }
 
