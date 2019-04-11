@@ -77,7 +77,7 @@ class OuterSquare extends Component {
 		if (this.state.grow !== num) this.setState({ grow: num });
 	};
 	mouseLeaveCorner = () => {
-		if (this.state.grow === 0) this.setState({ grow: 0 });
+		if (this.state.grow !== 0) this.setState({ grow: 0 });
 	};
 	mouseClickCorner = num => {
 		if (this.state.selected === num) {
