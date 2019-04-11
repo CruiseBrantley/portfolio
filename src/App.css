@@ -3,20 +3,32 @@ body {
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
+	display: flex;
+	font-family: "Heebo", sans-serif;
 }
 .App {
-	position: absolute;
+	position: relative;
+	display: flex;
 	box-sizing: border-box;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	height: 100vmin;
-	width: 100vmin;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+	height: 90vmin;
+	width: 90vmin;
+	overflow-y: auto;
+	background-color: whitesmoke;
+	cursor: pointer;
+	box-shadow: 0 20px 80px 5px #423b3bb4;
 }
+
+.center-outer-div {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
 .corner1 {
 	/* border: 1px solid black; */
 	overflow: hidden;
@@ -26,7 +38,6 @@ body {
 	height: 50%;
 	width: 50%;
 	background: slategray;
-	transition: 250ms;
 }
 .corner2 {
 	margin: 0 auto;
@@ -55,15 +66,15 @@ body {
 	right: 0;
 	height: 50%;
 	width: 50%;
-	background: lightblue;
+	background-color: rgb(33, 155, 196);
 }
 .grow {
+	position: absolute;
 	padding: 0;
 	height: 60%;
 	width: 60%;
 	z-index: 9999;
 	box-shadow: 0 0 40px 5px #423b3bb4;
-	/* border-radius: 0px 0px 30px 0px; */
 	transition: width 500ms, height 500ms;
 }
 
@@ -72,14 +83,17 @@ body {
 	height: 50%;
 	width: 50%;
 	z-index: 0;
-	transition: width 500ms, height 500ms, z-index 500ms;
+	transition: width 500ms, height 500ms, z-index 500ms, background-color 1000ms;
 }
 
 .selected {
 	height: 100%;
 	width: 100%;
 	z-index: 9999;
-	transition: width 500ms, height 500ms;
+	background-color: whitesmoke;
+	overflow-y: auto;
+	transition: width 500ms, height 500ms, background-color 1000ms;
+	animation: 1.5s delay-overflow;
 }
 
 @keyframes grow {
@@ -101,4 +115,18 @@ body {
 	align-items: center;
 	height: 100%;
 	width: 100%;
+}
+
+.corner-full-container {
+	margin: 0 auto;
+	width: 80vmin;
+}
+
+@keyframes delay-overflow {
+	0% {
+		overflow-y: hidden;
+	}
+	100% {
+		overflow-y: auto;
+	}
 }
