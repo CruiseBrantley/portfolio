@@ -92,21 +92,8 @@ body {
 	z-index: 9999;
 	background-color: whitesmoke;
 	overflow-y: auto;
-	transition: width 500ms, height 500ms, background-color 1000ms;
+	transition: width 500ms, height 500ms, background-color 1500ms;
 	animation: 1.5s delay-overflow;
-}
-
-@keyframes grow {
-	0% {
-		height: 50%;
-		width: 50%;
-	}
-
-	100% {
-		height: 60%;
-		width: 60%;
-		z-index: 9999;
-	}
 }
 
 .subject-div {
@@ -120,6 +107,11 @@ body {
 .corner-full-container {
 	margin: 0 auto;
 	width: 80vmin;
+	height: 80vmin;
+}
+
+.bio-container {
+	height: 80vmin;
 }
 
 @keyframes delay-overflow {
