@@ -19,7 +19,6 @@ class App extends Component {
 						path="/education"
 						render={() => <OuterSquare selected={4} />}
 					/>
-					<OuterSquare />
 				</div>
 			</div>
 		);
