@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 class Corner extends Component {
 	render() {
-		let renderCount = 0;
-		console.log(++renderCount);
 		return (
 			<div className="corner-full-container">
 				<h1>{this.props.subject}</h1>
