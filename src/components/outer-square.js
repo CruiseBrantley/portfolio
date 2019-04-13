@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Corner from "./corner";
 import CornerFull from "./corner-full";
 import Bio from "./bio";
+import Experience from "./experience";
 
 class OuterSquare extends Component {
 	state = {
@@ -39,7 +40,7 @@ class OuterSquare extends Component {
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 3 ? (
-						<CornerFull subject="Experience" linked={true} />
+						<Experience />
 					) : (
 						<Corner subject="Experience" />
 					)}
@@ -65,23 +66,26 @@ class OuterSquare extends Component {
 		if (this.state.grow === num) return `corner${num} grow`;
 		return `corner${num} shrink`;
 	};
-	deselect = e => {
-		this.setState({ grow: 0, selected: 0, timeout: true });
-		setTimeout(() => this.setState({ timeout: false }), 250);
-	};
+
 	mouseEnterCorner = num => {
 		if (this.state.timeout) return;
 		if (this.state.grow !== num) this.setState({ grow: num });
 	};
+
 	mouseLeaveCorner = () => {
 		if (this.state.grow !== 0) this.setState({ grow: 0 });
 	};
+
 	mouseClickCorner = num => {
 		if (this.state.selected === num) {
 			this.deselect();
 			return;
 		}
 		this.setState({ selected: num, timeout: true });
+	};
+	deselect = e => {
+		this.setState({ grow: 0, selected: 0, timeout: true });
+		setTimeout(() => this.setState({ timeout: false }), 250);
 	};
 }
 

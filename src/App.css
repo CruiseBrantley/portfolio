@@ -5,6 +5,7 @@ body {
 	box-sizing: border-box;
 	display: flex;
 	font-family: "Heebo", sans-serif;
+	font-size: 1rem;
 }
 .App {
 	position: relative;
@@ -30,7 +31,6 @@ body {
 }
 
 .corner1 {
-	/* border: 1px solid black; */
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -41,7 +41,6 @@ body {
 }
 .corner2 {
 	margin: 0 auto;
-	align-content: center;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -96,6 +95,15 @@ body {
 	animation: 1.5s delay-overflow;
 }
 
+@keyframes delay-overflow {
+	0% {
+		overflow-y: hidden;
+	}
+	100% {
+		overflow-y: auto;
+	}
+}
+
 .subject-div {
 	display: flex;
 	justify-content: center;
@@ -106,19 +114,28 @@ body {
 
 .corner-full-container {
 	margin: 0 auto;
+	margin-top: 5vmin;
 	width: 80vmin;
 	height: 80vmin;
 }
 
 .bio-container {
-	height: 80vmin;
+	/* height: 100%; */
 }
 
-@keyframes delay-overflow {
-	0% {
-		overflow-y: hidden;
-	}
-	100% {
-		overflow-y: auto;
-	}
+.experience-container {
+	text-align: left;
+}
+
+.experience-container h1 {
+	text-align: center;
+}
+
+.experience-container h3 {
+	margin-bottom: 0;
+}
+
+.experience-container h4 {
+	margin-top: 0;
+	margin-bottom: 0.4rem;
 }
