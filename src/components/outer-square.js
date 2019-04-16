@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Corner from "./corner";
-import CornerFull from "./corner-full";
 import Bio from "./bio";
 import Experience from "./experience";
 import Education from "./education";
+import Projects from "./projects";
 
 class OuterSquare extends Component {
 	state = {
@@ -29,7 +29,7 @@ class OuterSquare extends Component {
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 2 ? (
-						<CornerFull subject="Projects" />
+						<Projects />
 					) : (
 						<Corner subject="Projects" />
 					)}
