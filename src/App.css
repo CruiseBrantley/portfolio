@@ -120,7 +120,7 @@ body {
 }
 
 .bio-container {
-	/* height: 100%; */
+	/* Reserved for future use */
 }
 
 .experience-container {
@@ -138,4 +138,21 @@ body {
 .experience-container h4 {
 	margin-top: 0;
 	margin-bottom: 0.4rem;
+}
+
+.education-container {
+	text-align: left;
+}
+
+.education-container h1 {
+	text-align: center;
+}
+
+.education-container h3 {
+	margin-bottom: 0;
+}
+
+.education-container h4 {
+	margin-top: 0;
+	margin-bottom: 0;
 }
