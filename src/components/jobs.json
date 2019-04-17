@@ -1,0 +1,44 @@
+[
+	{
+		"Title": "Advanced Repair Agent",
+		"Company": "Best Buy - Geek Squad | Aug 2017 - Present",
+		"Responsibilities": [
+			"Frequently lead tag resolutions metrics for the precinct, occasionally exceeding one resolution per hour where the goal is one resolution per two hours.",
+			"Collaborate with coworkers to ensure proper documentation of client requests throughout the repair queue.",
+			"Oversee priorities within a client queue of devices and ensure all are progressing in a timely manner."
+		]
+	},
+	{
+		"Title": "Consultation Agent",
+		"Company": "Best Buy - Geek Squad | Jan 2017 - Sep 2017",
+		"Responsibilities": [
+			"Oversaw the client check in / check out process for over 20 clients daily.",
+			"Proactively engaged clients when available between reservations.",
+			"Troubleshot various technical problems and created detailed analysis of the client’s issue to be resolved."
+		]
+	},
+	{
+		"Title": "Temporary IT Intern",
+		"Company": "Triumph Airborne Structures | May 2015 - August 2015",
+		"Responsibilities": [
+			"Managed critical system updates on all registered workstations in a time critical environment.",
+			"Managed installation of work critical programs and networking tools.",
+			"Created storage images to promote more rapid deployment of resources.",
+			"Replaced internal components to maintain workstations.",
+			"Configured printer networking for installed workstations.",
+			"Worked with Ethernet cabling including end crimping and fluke testing.",
+			"Troubleshot various technical issues on employee systems."
+		]
+	},
+	{
+		"Title": "Certified Photo Specialist",
+		"Company": "Walgreens | Sep 2010 - Sep 2016",
+		"Responsibilities": [
+			"Maintained image printing and scanning equipment.",
+			"Developed client images in a timely manner and organized hundreds of orders.",
+			"Provided outstanding customer service and facilitated client photo needs.",
+			"Proactively engaged customers throughout the store to ensure a quality experience.",
+			"Answered customer questions through understanding their needs and assisted accordingly."
+		]
+	}
+]
