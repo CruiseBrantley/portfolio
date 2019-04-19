@@ -1,0 +1,27 @@
+[
+	{
+		"School": "Lambda School",
+		"Major": "Web Development and Computer Science",
+		"Years": "2018 - 2019",
+		"Description": "Lambda School is a 6+ month Computer Science & Software Engineering Academy that provides an immersive hands-on curriculum with a focus on computer science, software engineering, and web development.",
+		"Bullets": [
+			"Utilized agile software development and Git workflow on all projects.",
+			"Gained hands-on experience with client and server testing.",
+			"Completed all curriculum course work including: React, Redux, Node, Express, MongoDB, Jest, Python, Django, etc.",
+			"Wrote production-ready code using ReactJS, Redux, and CSS on the front-end and NodeJS and Express on the back-end to build single page applications.",
+			"Mastered five-week supplemental course on back-end web development using Java and Spring Boot."
+		]
+	},
+	{
+		"School": "Henderson State University",
+		"Major": "Computer Science",
+		"Years": "2008 - 2011",
+		"Description": "Completed 67 credit hours towards BS in Computer Science, including these pertinent classes.",
+		"Bullets": [
+			"Computer Organization",
+			"Assembler Language",
+			"Data Structures",
+			"Foundations of Computer Science I and II"
+		]
+	}
+]
