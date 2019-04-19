@@ -18,7 +18,6 @@ body {
 	width: 90vmin;
 	overflow-y: auto;
 	background-color: whitesmoke;
-	cursor: pointer;
 	box-shadow: 0 20px 80px 5px #423b3bb4;
 }
 
@@ -102,6 +101,19 @@ body {
 	100% {
 		overflow-y: auto;
 	}
+}
+
+button {
+	cursor: pointer;
+	background: white;
+	border: 1px solid black;
+	transition: 0.5s;
+	border-radius: 4px;
+}
+
+button:hover {
+	box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .subject-div {

@@ -15,6 +15,14 @@ class Bio extends Component {
 						required to keep current with developments and ready to acquire new
 						skills.
 					</p>
+					<button
+						onClick={() =>
+							(window.location.href =
+								"https://drive.google.com/uc?export=download&id=1XXBy4Uu-oqYq1j6NxCvutcy3R0sKUlBy")
+						}
+					>
+						Resume
+					</button>
 				</div>
 			</div>
 		);
