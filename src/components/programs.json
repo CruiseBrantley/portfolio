@@ -1,0 +1,34 @@
+[
+	{
+		"Title": "RezRight",
+		"Link": "https://rezright.app/",
+		"LinkText": "RezRight.app",
+		"DescriptionArr": [
+			"A web app that makes the process of creating a resume as easy as possible.",
+			"RezRight was built using React for the front-end and Express.js with MongoDB for the back-end server and database."
+		],
+		"Span": "Developed on a team of four and deployed within 4 weeks.",
+		"Contributions": "Individually contributed React structure, data structure storage development, front-end data flow."
+	},
+	{
+		"Title": "Cloud Chart",
+		"Link": "https://cloud-chart-java.firebaseapp.com/",
+		"LinkText": "cloud-chart-java.firebaseapp.com",
+		"DescriptionArr": [
+			"Cloud Chart is a spreadsheet-database hybrid, Spreadsheets are saved to a SQL database with cross referenced fields.",
+			"Cloud Chart was built using React for the front-end, Java with Spring Boot for the back-end and MySQL for the database."
+		],
+		"Span": "Developed on a team of 3 and deployed within 1 week.",
+		"Contributions": "Individually contributed React structure, front-end data flow and configured client RESTful endpoints."
+	},
+	{
+		"Title": "WoW Bindings",
+		"Link": "https://wow-bindings.firebaseapp.com/",
+		"LinkText": "wow-bindings.firebaseapp.com",
+		"DescriptionArr": [
+			"A web app that allows you to test your World of Warcraft keybindings and trains your muscle memory for quick reactions."
+		],
+		"Span": "Built as a solo personal project using React for the front-end and draws from Google Sheets for the database used along with local storage.",
+		"Contributions": ""
+	}
+]
