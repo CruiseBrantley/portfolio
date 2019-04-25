@@ -181,3 +181,30 @@ button:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.project-div {
+	display: flex;
+	align-items: center;
+}
+
+.project-image {
+	margin: 1rem;
+	max-width: 40%;
+	object-fit: contain;
+}
+
+.image-left {
+	flex-direction: row-reverse;
+}
+
+@media (max-width: 640px) {
+	.project-div {
+		flex-direction: column;
+	}
+	.image-left {
+		flex-direction: column;
+	}
+	.project-image {
+		max-width: 100%;
+	}
+}
