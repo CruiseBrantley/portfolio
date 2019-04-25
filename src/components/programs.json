@@ -17,7 +17,8 @@
 		"LinkText": "wow-bindings.firebaseapp.com",
 		"Image": "WoW.jpg",
 		"DescriptionArr": [
-			"A web app that allows you to test your World of Warcraft keybindings and trains your muscle memory for quick reactions."
+			"A web app that allows you to test your World of Warcraft keybindings and trains your muscle memory for quick reactions.",
+			"WoW Bindings was designed to be maintained with current abilities through the Google Sheets page it uses as a database."
 		],
 		"Span": "Built as a solo personal project using React for the front-end and draws from Google Sheets for the database used along with local storage.",
 		"Contributions": ""
@@ -45,5 +46,17 @@
 		],
 		"Span": "Developed on a team of 3 and deployed within 1 week.",
 		"Contributions": "Individually contributed React structure, front-end data flow and configured client RESTful endpoints."
+	},
+	{
+		"Title": "Portfolio",
+		"Link": "https://cruisebrantley.com/",
+		"LinkText": "cruisebrantley.com",
+		"Image": "portfolio.jpg",
+		"DescriptionArr": [
+			"This portfolio itself is a project. It was built using React, with CSS transitions - implemented with dynamic class changing, and hosted using Firebase",
+			"Built to be fully Responsive to all screen sizes."
+		],
+		"Span": "Solo Project built in spare time.",
+		"Contributions": ""
 	}
 ]
