@@ -17,6 +17,8 @@ body {
 	align-items: center;
 	height: 90vmin;
 	width: 90vmin;
+	min-width: 400px;
+	min-height: 400px;
 	overflow-y: auto;
 	background-color: whitesmoke;
 	box-shadow: 0 20px 80px 5px #423b3bb4;
