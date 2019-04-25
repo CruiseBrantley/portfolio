@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import programs from "./programs.json";
 
 class Projects extends Component {
+	componentDidMount() {
+		this.props.changeSquare(false);
+	}
+	componentWillUnmount() {
+		this.props.changeSquare(true);
+	}
+
 	importAll(r) {
 		let images = {};
 		r.keys().forEach((item, index) => {

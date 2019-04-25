@@ -8,6 +8,7 @@ body {
 	font-size: 1rem;
 }
 .App {
+	user-select: none;
 	position: relative;
 	display: flex;
 	box-sizing: border-box;
@@ -19,6 +20,7 @@ body {
 	overflow-y: auto;
 	background-color: whitesmoke;
 	box-shadow: 0 20px 80px 5px #423b3bb4;
+	transition: 0.4s;
 }
 
 .center-outer-div {
@@ -27,6 +29,11 @@ body {
 	display: flex;
 	height: 100vh;
 	width: 100vw;
+}
+
+.corner-selected {
+	height: 90vh;
+	transition: 0.4s;
 }
 
 .corner1 {

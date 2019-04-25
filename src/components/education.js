@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import schools from "./schools.json";
 
 class Education extends Component {
+	componentDidMount() {
+		this.props.changeSquare(false);
+	}
+	componentWillUnmount() {
+		this.props.changeSquare(true);
+	}
 	render() {
 		return (
 			<div className="corner-full-container">

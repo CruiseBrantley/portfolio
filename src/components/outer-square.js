@@ -11,6 +11,9 @@ class OuterSquare extends Component {
 		selected: this.props.selected || 0,
 		timeout: false
 	};
+	componentDidMount() {
+		console.log(this.props);
+	}
 	render() {
 		return (
 			<div>
@@ -20,7 +23,11 @@ class OuterSquare extends Component {
 					onClick={() => this.mouseClickCorner(1)}
 					onMouseLeave={this.mouseLeaveCorner}
 				>
-					{this.state.selected === 1 ? <Bio /> : <Corner subject="Bio" />}
+					{this.state.selected === 1 ? (
+						<Bio changeSquare={this.props.changeSquare} />
+					) : (
+						<Corner subject="Bio" />
+					)}
 				</div>
 				<div
 					className={this.evalClass(2)}
@@ -29,7 +36,7 @@ class OuterSquare extends Component {
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 2 ? (
-						<Projects />
+						<Projects changeSquare={this.props.changeSquare} />
 					) : (
 						<Corner subject="Projects" />
 					)}
@@ -41,7 +48,7 @@ class OuterSquare extends Component {
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 3 ? (
-						<Experience />
+						<Experience changeSquare={this.props.changeSquare} />
 					) : (
 						<Corner subject="Experience" />
 					)}
@@ -53,7 +60,7 @@ class OuterSquare extends Component {
 					onMouseLeave={this.mouseLeaveCorner}
 				>
 					{this.state.selected === 4 ? (
-						<Education />
+						<Education changeSquare={this.props.changeSquare} />
 					) : (
 						<Corner subject="Education" />
 					)}
