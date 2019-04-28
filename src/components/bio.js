@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Contact from "./contactMe";
 
 class Bio extends Component {
 	componentDidMount() {
@@ -30,6 +31,7 @@ class Bio extends Component {
 						Resume
 					</button>
 				</div>
+				<Contact />
 			</div>
 		);
 	}
