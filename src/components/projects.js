@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import programs from "./programs.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-	faGithubAlt,
-	faGithubSquare
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class Projects extends Component {
 	componentDidMount() {
