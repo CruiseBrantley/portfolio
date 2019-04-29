@@ -3,6 +3,7 @@
 		"Title": "CRQueue",
 		"Link": "https://chrome.google.com/webstore/detail/crqueue/jelkmjpmjjlkhinmcipghbgkcdelldjj",
 		"LinkText": "chrome.google.com/webstore/...",
+		"Github": "https://github.com/CruiseBrantley/CRQueue",
 		"Image": "CRQ.jpg",
 		"DescriptionArr": [
 			"A Chrome extension that allows you to view your CrunchyRoll queue from any tab using a Material UI theme.",
@@ -15,6 +16,7 @@
 		"Title": "WoW Bindings",
 		"Link": "https://wow-bindings.firebaseapp.com/",
 		"LinkText": "wow-bindings.firebaseapp.com",
+		"Github": "https://github.com/CruiseBrantley/learn-keybindings",
 		"Image": "WoW.jpg",
 		"DescriptionArr": [
 			"A web app that allows you to test your World of Warcraft keybindings and trains your muscle memory for quick reactions.",
@@ -27,6 +29,7 @@
 		"Title": "RezRight",
 		"Link": "https://rezright.app/",
 		"LinkText": "RezRight.app",
+		"Github": "https://github.com/Lambda-School-Labs/CS9-ResumeMaker",
 		"Image": "rezRight.jpg",
 		"DescriptionArr": [
 			"A web app that makes the process of creating a resume as easy as possible.",
@@ -39,6 +42,7 @@
 		"Title": "Cloud Chart",
 		"Link": "https://cloud-chart-java.firebaseapp.com/",
 		"LinkText": "cloud-chart-java.firebaseapp.com",
+		"Github": "https://github.com/harrisonbrock/lambda-table",
 		"Image": "CloudChart.jpg",
 		"DescriptionArr": [
 			"Cloud Chart is a spreadsheet-database hybrid, Spreadsheets are saved to a SQL database with cross referenced fields.",
@@ -51,6 +55,7 @@
 		"Title": "Portfolio",
 		"Link": "https://cruisebrantley.com/",
 		"LinkText": "cruisebrantley.com",
+		"Github": "https://github.com/CruiseBrantley/portfolio",
 		"Image": "portfolio.jpg",
 		"DescriptionArr": [
 			"This portfolio itself is a project. It was built using React, with CSS transitions - implemented with dynamic class changing, and hosted using Firebase",
