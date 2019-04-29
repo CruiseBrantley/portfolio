@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import programs from "./programs.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faGithub,
+	faGithubAlt,
+	faGithubSquare
+} from "@fortawesome/free-brands-svg-icons";
 
 class Projects extends Component {
 	componentDidMount() {
@@ -34,7 +40,12 @@ class Projects extends Component {
 								key={index}
 							>
 								<div className="project-text">
-									<h3>{program.Title}</h3>
+									<h3>
+										{program.Title}{" "}
+										<a href={program.Github}>
+											<FontAwesomeIcon icon={faGithub} />
+										</a>
+									</h3>
 									<a href={program.Link}>{program.LinkText}</a>
 									<br />
 									{program.DescriptionArr.map((description, index) => {

@@ -196,6 +196,10 @@ button:hover {
 	align-items: center;
 }
 
+.project-text a {
+	color: black;
+}
+
 .project-image {
 	margin: 1rem;
 	max-width: 40%;
