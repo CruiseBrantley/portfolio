@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Contact from "./contactMe";
+import information from "./information";
 
 class Bio extends Component {
 	componentDidMount() {
@@ -12,25 +13,30 @@ class Bio extends Component {
 		return (
 			<div className="corner-full-container">
 				<div className="bio-container">
-					<h1>About Cruise</h1>
-
-					<p>
-						Full Stack Web Developer who is passionate about new technologies
-						and the user experience. Background of ten years in customer service
-						and experience breaking down technical issues into understandable
-						language. Enjoys feedback and endeavors to improve. Has the passion
-						required to keep current with developments and ready to acquire new
-						skills.
-					</p>
-					<button
-						onClick={() =>
-							(window.location.href =
-								"https://drive.google.com/uc?export=download&id=1XXBy4Uu-oqYq1j6NxCvutcy3R0sKUlBy")
-						}
-					>
-						Resume
-					</button>
+					<h1>{`About ${information.Name}`}</h1>
+					<p>{information.Bio}</p>
 				</div>
+				<h3>Skills:</h3>
+				<div className="skills-container">
+					<div className="skills-div">
+						{information.Skills.map((skill, index) => {
+							return index % 3 === 0 ? <ul>{`- ${skill}`}</ul> : null;
+						})}
+					</div>
+					<div className="skills-div">
+						{information.Skills.map((skill, index) => {
+							return index % 3 === 1 ? <ul>{`- ${skill}`}</ul> : null;
+						})}
+					</div>
+					<div className="skills-div">
+						{information.Skills.map((skill, index) => {
+							return index % 3 === 2 ? <ul>{`- ${skill}`}</ul> : null;
+						})}
+					</div>
+				</div>
+				<button onClick={() => (window.location.href = information.Resume)}>
+					Resume
+				</button>
 				<Contact />
 			</div>
 		);
