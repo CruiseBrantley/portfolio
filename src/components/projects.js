@@ -52,10 +52,9 @@ class Projects extends Component {
 											</div>
 										);
 									})}
-									<li>{program.Span}</li>
-									{program.Contributions ? (
-										<li>{program.Contributions}</li>
-									) : null}
+									{program.HyphenArr.map((hyphen, index) => {
+										return <li key={index}>{hyphen}</li>;
+									})}
 								</div>
 								<img
 									alt=""
