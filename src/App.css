@@ -7,6 +7,7 @@ body {
 	font-family: "Heebo", sans-serif;
 	font-size: 1rem;
 }
+
 .App {
 	user-select: none;
 	position: relative;
@@ -47,6 +48,7 @@ body {
 	width: 50%;
 	background: slategray;
 }
+
 .corner2 {
 	margin: 0 auto;
 	overflow: hidden;
@@ -57,6 +59,7 @@ body {
 	width: 50%;
 	background: salmon;
 }
+
 .corner3 {
 	overflow: hidden;
 	position: absolute;
@@ -66,6 +69,7 @@ body {
 	width: 50%;
 	background: rgb(73, 182, 173);
 }
+
 .corner4 {
 	overflow: hidden;
 	position: absolute;
@@ -75,6 +79,7 @@ body {
 	width: 50%;
 	background-color: rgb(33, 155, 196);
 }
+
 .grow {
 	position: absolute;
 	padding: 0;
@@ -125,6 +130,21 @@ button:hover {
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.skills-container {
+	width: 100%;
+	display: flex;
+}
+
+.skills-div {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+}
+
+.skills-div ul {
+	padding: 5px;
+}
+
 .subject-div {
 	display: flex;
 	justify-content: center;
@@ -137,6 +157,7 @@ button:hover {
 	margin: 0 auto;
 	margin-top: 5vmin;
 	width: 80vmin;
+	min-width: 400px;
 	height: 80vmin;
 }
 
