@@ -20,17 +20,23 @@ class Bio extends Component {
 				<div className="skills-container">
 					<div className="skills-div">
 						{information.Skills.map((skill, index) => {
-							return index % 3 === 0 ? <ul>{`- ${skill}`}</ul> : null;
+							return index % 3 === 0 ? (
+								<ul key={index}>{`- ${skill}`}</ul>
+							) : null;
 						})}
 					</div>
 					<div className="skills-div">
 						{information.Skills.map((skill, index) => {
-							return index % 3 === 1 ? <ul>{`- ${skill}`}</ul> : null;
+							return index % 3 === 1 ? (
+								<ul key={index}>{`- ${skill}`}</ul>
+							) : null;
 						})}
 					</div>
 					<div className="skills-div">
 						{information.Skills.map((skill, index) => {
-							return index % 3 === 2 ? <ul>{`- ${skill}`}</ul> : null;
+							return index % 3 === 2 ? (
+								<ul key={index}>{`- ${skill}`}</ul>
+							) : null;
 						})}
 					</div>
 				</div>
