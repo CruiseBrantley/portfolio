@@ -11,9 +11,6 @@ class OuterSquare extends Component {
 		selected: this.props.selected || 0,
 		timeout: false
 	};
-	componentDidMount() {
-		console.log(this.props);
-	}
 	render() {
 		return (
 			<div>
