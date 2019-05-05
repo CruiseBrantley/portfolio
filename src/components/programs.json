@@ -9,8 +9,9 @@
 			"A Chrome extension that allows you to view your CrunchyRoll queue from any tab using a Material UI theme.",
 			"Features include updating your queue through unfocused tab manipulation, and redirects to facilitate login."
 		],
-		"Span": "Built as a solo personal project using pure JavaScript to manipulate the HTML and CSS.",
-		"Contributions": ""
+		"HyphenArr": [
+			"Built as a solo personal project using pure JavaScript to manipulate the HTML and CSS."
+		]
 	},
 	{
 		"Title": "WoW Bindings",
@@ -22,8 +23,9 @@
 			"A web app that allows you to test your World of Warcraft keybindings and trains your muscle memory for quick reactions.",
 			"WoW Bindings was designed to be maintained with current abilities through the Google Sheets page it uses as a database."
 		],
-		"Span": "Built as a solo personal project using React for the front-end and draws from Google Sheets for the database used along with local storage.",
-		"Contributions": ""
+		"HyphenArr": [
+			"Built as a solo personal project using React for the front-end and draws from Google Sheets for the database used along with local storage."
+		]
 	},
 	{
 		"Title": "RezRight",
@@ -35,8 +37,27 @@
 			"A web app that makes the process of creating a resume as easy as possible.",
 			"RezRight was built using React for the front-end and Express.js with MongoDB for the back-end server and database."
 		],
-		"Span": "Developed on a team of four and deployed within 4 weeks.",
-		"Contributions": "Individually contributed React structure, data structure storage development, front-end data flow."
+		"HyphenArr": [
+			"Developed on a team of four and deployed within 4 weeks.",
+			"Individually contributed React structure, data structure storage development, front-end data flow."
+		]
+	},
+	{
+		"Title": "Cruise-Bot",
+		"Link": "",
+		"LinkText": "",
+		"Github": "https://github.com/CruiseBrantley/cruise-bot",
+		"Image": "Discord-Logo+Wordmark-Color.svg",
+		"DescriptionArr": [
+			"A flexible Discord bot being developed on Discord.js . Features are being added frequently and currently consist of:"
+		],
+		"HyphenArr": [
+			"Logging edited and deleted messages.",
+			"Utilizing the Google Translate api for text-to-speech creation and playback to chosen channel through FFMPEG.",
+			"Integration with the Cruise-Notes platform hosted on Heroku.",
+			"Integration of the Twitter API to a dedicated channel with user control.",
+			"Parroting users on command, and more."
+		]
 	},
 	{
 		"Title": "Cloud Chart",
@@ -48,8 +69,10 @@
 			"Cloud Chart is a spreadsheet-database hybrid, Spreadsheets are saved to a SQL database with cross referenced fields.",
 			"Cloud Chart was built using React for the front-end, Java with Spring Boot for the back-end and MySQL for the database."
 		],
-		"Span": "Developed on a team of 3 and deployed within 1 week.",
-		"Contributions": "Individually contributed React structure, front-end data flow and configured client RESTful endpoints."
+		"HyphenArr": [
+			"Developed on a team of 3 and deployed within 1 week.",
+			"Individually contributed React structure, front-end data flow and configured client RESTful endpoints."
+		]
 	},
 	{
 		"Title": "Portfolio",
@@ -61,7 +84,6 @@
 			"This portfolio itself is a project. It was built using React, with CSS transitions - implemented with dynamic class changing, and hosted using Firebase",
 			"Built to be fully Responsive to all screen sizes."
 		],
-		"Span": "Solo Project built in spare time.",
-		"Contributions": ""
+		"HyphenArr": ["Solo Project built in spare time."]
 	}
 ]
