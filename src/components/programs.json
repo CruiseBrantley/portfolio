@@ -1,5 +1,25 @@
 [
 	{
+		"Title": "Skynet",
+		"Link": "https://discord.com/oauth2/authorize?client_id=558428214805135370&permissions=0&scope=bot",
+		"LinkText": "Add Skynet to your Discord server",
+		"Github": "https://github.com/CruiseBrantley/skynet",
+		"Image": "Discord-Logo+Wordmark-Color.svg",
+		"DescriptionArr": [
+			"A flexible Discord bot being developed on Discord.js . Features are being added frequently and currently consist of:"
+		],
+		"HyphenArr": [
+			"Twitch Notifications for specific streamers",
+			"Voting on server specified topics with admin control per server",
+			"Voting backed up on the cloud instantaneously with a firebase database",
+			"Utilizing the Google Translate api for text-to-speech creation and playback to chosen channel through FFMPEG.",
+			"Logging edited and deleted messages.",
+			"Integration with the Cruise-Notes platform hosted on Heroku.",
+			"Integration of the Twitter API to a dedicated channel with user control.",
+			"Parroting users on command, and more."
+		]
+	},
+	{
 		"Title": "CRQueue",
 		"Link": "https://chrome.google.com/webstore/detail/crqueue/jelkmjpmjjlkhinmcipghbgkcdelldjj",
 		"LinkText": "chrome.google.com/webstore/...",
@@ -40,23 +60,6 @@
 		"HyphenArr": [
 			"Developed on a team of four and deployed within 4 weeks.",
 			"Individually contributed React structure, data structure storage development, front-end data flow."
-		]
-	},
-	{
-		"Title": "Cruise-Bot",
-		"Link": "",
-		"LinkText": "",
-		"Github": "https://github.com/CruiseBrantley/cruise-bot",
-		"Image": "Discord-Logo+Wordmark-Color.svg",
-		"DescriptionArr": [
-			"A flexible Discord bot being developed on Discord.js . Features are being added frequently and currently consist of:"
-		],
-		"HyphenArr": [
-			"Logging edited and deleted messages.",
-			"Utilizing the Google Translate api for text-to-speech creation and playback to chosen channel through FFMPEG.",
-			"Integration with the Cruise-Notes platform hosted on Heroku.",
-			"Integration of the Twitter API to a dedicated channel with user control.",
-			"Parroting users on command, and more."
 		]
 	},
 	{
