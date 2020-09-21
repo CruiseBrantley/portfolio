@@ -1,5 +1,17 @@
 [
 	{
+		"Title": "Portfolio",
+		"Link": "https://cruisebrantley.com/",
+		"LinkText": "cruisebrantley.com",
+		"Github": "https://github.com/CruiseBrantley/portfolio",
+		"Image": "portfolio.jpg",
+		"DescriptionArr": [
+			"This portfolio itself is a project. It was built using React, with CSS transitions - implemented with dynamic class changing, and hosted using Firebase",
+			"Built to be fully Responsive to all screen sizes."
+		],
+		"HyphenArr": ["Solo Project built in spare time."]
+	},
+	{
 		"Title": "Skynet",
 		"Link": "https://discord.com/oauth2/authorize?client_id=558428214805135370&permissions=0&scope=bot",
 		"LinkText": "Add Skynet to your Discord server",
@@ -49,7 +61,7 @@
 	},
 	{
 		"Title": "RezRight",
-		"Link": "https://rezright.app/",
+		"Link": "https://labs-resume-maker.firebaseapp.com/",
 		"LinkText": "RezRight.app",
 		"Github": "https://github.com/Lambda-School-Labs/CS9-ResumeMaker",
 		"Image": "rezRight.jpg",
@@ -76,17 +88,5 @@
 			"Developed on a team of 3 and deployed within 1 week.",
 			"Individually contributed React structure, front-end data flow and configured client RESTful endpoints."
 		]
-	},
-	{
-		"Title": "Portfolio",
-		"Link": "https://cruisebrantley.com/",
-		"LinkText": "cruisebrantley.com",
-		"Github": "https://github.com/CruiseBrantley/portfolio",
-		"Image": "portfolio.jpg",
-		"DescriptionArr": [
-			"This portfolio itself is a project. It was built using React, with CSS transitions - implemented with dynamic class changing, and hosted using Firebase",
-			"Built to be fully Responsive to all screen sizes."
-		],
-		"HyphenArr": ["Solo Project built in spare time."]
 	}
 ]
